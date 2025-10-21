@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router";
 
-
 import RootLayoyt from "../Main/RootLayoyt";
 import Home from "../Pages/Home";
 import Profile from "../Pages/Profile";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import ForgotPassword from "../Pages/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         Component: Register,
+      },
+      {
+        path: "/forgot-password",   // ✅ নতুন রুট
+        Component: ForgotPassword,
       },
     ],
   },
