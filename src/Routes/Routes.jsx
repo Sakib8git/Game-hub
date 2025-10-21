@@ -6,6 +6,7 @@ import Profile from "../Pages/Profile";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ForgotPassword from "../Pages/ForgotPassword";
+import AllGames from "../Pages/AllGames";
 
 const router = createBrowserRouter([
   {
@@ -29,9 +30,15 @@ const router = createBrowserRouter([
         Component: Register,
       },
       {
-        path: "/forgot-password",   // ✅ নতুন রুট
+        path: "/forgot-password",
         Component: ForgotPassword,
       },
+      {
+        path: "/games",   // ✅ নতুন রুট
+        Component: AllGames,
+      },
+
+
     ],
   },
 

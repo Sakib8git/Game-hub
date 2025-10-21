@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknowns Battle Ground: PUBG",
+    "coverPhoto": "https://example.com/images/pubg.png",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": "4.5",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://example.com/images/cod-mobile.png",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Experience the thrill of Call of Duty with iconic multiplayer maps, various game modes, and intense battle royale action.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://example.com/images/genshin.png",
+    "category": "RPG",
+    "downloadLink": "https://genshin.hoyoverse.com/",
+    "description": "An open-world action RPG featuring stunning visuals, elemental combat, and an expansive fantasy world to explore.",
+    "ratings": "4.7",
+    "developer": "HoYoverse"
+  },
+  {
+    "id": "4",
+    "title": "Among Us",
+    "coverPhoto": "https://example.com/images/among-us.png",
+    "category": "Strategy",
+    "downloadLink": "https://www.innersloth.com/games/among-us/",
+    "description": "A multiplayer social deduction game where crewmates must identify impostors before it's too late.",
+    "ratings": "4.3",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "5",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://example.com/images/coc.png",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashofclans/",
+    "description": "Build your village, train troops, and battle with millions of players in this epic combat strategy game.",
+    "ratings": "4.5",
+    "developer": "Supercell"
+  },
+  {
+    "id": "6",
+    "title": "Minecraft",
+    "coverPhoto": "https://example.com/images/minecraft.png",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/",
+    "description": "Explore infinite worlds and build everything from simple homes to grand castles in this creative sandbox game.",
+    "ratings": "4.8",
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "7",
+    "title": "Candy Crush Saga",
+    "coverPhoto": "https://example.com/images/candy-crush.png",
+    "category": "Puzzle",
+    "downloadLink": "https://king.com/game/candycrush",
+    "description": "Match colorful candies and solve challenging puzzles in this addictive match-3 game with hundreds of levels.",
+    "ratings": "4.4",
+    "developer": "King"
+  },
+  {
+    "id": "8",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://example.com/images/subway-surfers.png",
+    "category": "Arcade",
+    "downloadLink": "https://www.sybo.com/games/subway-surfers/",
+    "description": "Dash through the subway tracks, dodge trains, and collect coins in this endless runner adventure.",
+    "ratings": "4.5",
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "9",
+    "title": "Roblox",
+    "coverPhoto": "https://example.com/images/roblox.png",
+    "category": "Sandbox",
+    "downloadLink": "https://www.roblox.com/",
+    "description": "Create, share experiences, and play millions of user-generated games in this immersive platform.",
+    "ratings": "4.4",
+    "developer": "Roblox Corporation"
+  },
+  {
+    "id": "10",
+    "title": "Free Fire",
+    "coverPhoto": "https://example.com/images/free-fire.png",
+    "category": "FPS",
+    "downloadLink": "https://ff.garena.com/",
+    "description": "Survive in 10-minute battle royale matches with fast-paced action and unique character abilities.",
+    "ratings": "4.3",
+    "developer": "Garena"
+  },
+  {
+    "id": "11",
+    "title": "Clash Royale",
+    "coverPhoto": "https://example.com/images/clash-royale.png",
+    "category": "Strategy",
+    "downloadLink": "https://supercell.com/en/games/clashroyale/",
+    "description": "Real-time multiplayer card battle game featuring characters from Clash of Clans in fast-paced arena combat.",
+    "ratings": "4.4",
+    "developer": "Supercell"
+  },
+  {
+    "id": "12",
+    "title": "Mobile Legends: Bang Bang",
+    "coverPhoto": "https://example.com/images/mlbb.png",
+    "category": "MOBA",
+    "downloadLink": "https://m.mobilelegends.com/",
+    "description": "5v5 MOBA battles with over 100 heroes, strategic team fights, and fast-paced action in 10-minute matches.",
+    "ratings": "4.5",
+    "developer": "Moonton"
+  },
+  {
+    "id": "13",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://example.com/images/asphalt9.png",
+    "category": "Racing",
+    "downloadLink": "https://www.asphaltlegends.com/",
+    "description": "Race with premium licensed cars through spectacular locations with console-quality graphics and arcade action.",
+    "ratings": "4.6",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "14",
+    "title": "Brawl Stars",
+    "coverPhoto": "https://example.com/images/brawl-stars.png",
+    "category": "Action",
+    "downloadLink": "https://supercell.com/en/games/brawlstars/",
+    "description": "Fast-paced 3v3 multiplayer brawler with unique game modes, diverse characters, and quick matches.",
+    "ratings": "4.5",
+    "developer": "Supercell"
+  },
+  {
+    "id": "15",
+    "title": "Temple Run 2",
+    "coverPhoto": "https://example.com/images/temple-run.png",
+    "category": "Arcade",
+    "downloadLink": "https://www.imangistudios.com/games/temple-run-2/",
+    "description": "Run for your life in this thrilling endless runner with new obstacles, power-ups, and stunning environments.",
+    "ratings": "4.3",
+    "developer": "Imangi Studios"
+  },
+  {
+    "id": "16",
+    "title": "Pokémon GO",
+    "coverPhoto": "https://example.com/images/pokemon-go.png",
+    "category": "AR",
+    "downloadLink": "https://pokemongolive.com/",
+    "description": "Explore the real world to catch Pokémon, battle in gyms, and raid with friends in this augmented reality game.",
+    "ratings": "4.1",
+    "developer": "Niantic"
+  },
+  {
+    "id": "17",
+    "title": "8 Ball Pool",
+    "coverPhoto": "https://example.com/images/8ball-pool.png",
+    "category": "Sports",
+    "downloadLink": "https://www.miniclip.com/games/8-ball-pool-mobile/",
+    "description": "Play pool online against opponents worldwide with realistic physics and various game modes.",
+    "ratings": "4.5",
+    "developer": "Miniclip"
+  },
+  {
+    "id": "18",
+    "title": "Garena Free Fire MAX",
+    "coverPhoto": "https://example.com/images/ff-max.png",
+    "category": "FPS",
+    "downloadLink": "https://ff.garena.com/max/",
+    "description": "Enhanced version of Free Fire with improved graphics, effects, and immersive battle royale gameplay.",
+    "ratings": "4.4",
+    "developer": "Garena"
+  },
+  {
+    "id": "19",
+    "title": "Shadow Fight 3",
+    "coverPhoto": "https://example.com/images/shadow-fight-3.png",
+    "category": "Fighting",
+    "downloadLink": "https://www.nekki.com/games/shadow-fight-3/",
+    "description": "Epic martial arts action with stunning animations, RPG elements, and intense shadow combat battles.",
+    "ratings": "4.5",
+    "developer": "Nekki"
+  },
+  {
+    "id": "20",
+    "title": "Hill Climb Racing 2",
+    "coverPhoto": "https://example.com/images/hill-climb-2.png",
+    "category": "Racing",
+    "downloadLink": "https://www.fingersoft.com/game/hill-climb-racing-2/",
+    "description": "Physics-based driving game with challenging terrains, vehicle upgrades, and multiplayer racing action.",
+    "ratings": "4.4",
+    "developer": "Fingersoft"
+  }
+]
