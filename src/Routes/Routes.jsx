@@ -7,6 +7,8 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ForgotPassword from "../Pages/ForgotPassword";
 import AllGames from "../Pages/AllGames";
+import GameDetails from "../Pages/GameDetails";
+import ErrorPage from "../Pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -39,11 +41,17 @@ const router = createBrowserRouter([
         Component: AllGames,
         loader: () => fetch("/gameData.json"), // ✅ same short form
       },
+      {
+        path: "/games/:id", // ✅ dynamic route
+        Component: GameDetails,
+        loader: () => fetch("/gameData.json"), // সব data load হবে, তারপর filter করব
+      },
+
     ],
   },
   {
     path: "/*",
-    element: <h1>404</h1>,
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 
