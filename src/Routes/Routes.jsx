@@ -16,6 +16,7 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+        loader: () => fetch("/gameData.json"), // ✅ short form loader
       },
       {
         path: "/profile",
@@ -34,14 +35,12 @@ const router = createBrowserRouter([
         Component: ForgotPassword,
       },
       {
-        path: "/games",   // ✅ নতুন রুট
+        path: "/games",
         Component: AllGames,
+        loader: () => fetch("/gameData.json"), // ✅ same short form
       },
-
-
     ],
   },
-
   {
     path: "/*",
     element: <h1>404</h1>,

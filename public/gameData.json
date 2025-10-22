@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Player Unknowns Battle Ground: PUBG",
-    "coverPhoto": "https://example.com/images/pubg.png",
+    "coverPhoto": "https://i.ibb.co.com/k2YzxxhQ/Pubg.jpg",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
@@ -12,7 +12,7 @@
   {
     "id": "2",
     "title": "Call of Duty: Mobile",
-    "coverPhoto": "https://example.com/images/cod-mobile.png",
+    "coverPhoto": "https://i.ibb.co.com/PZ6bq0g5/cod.jpg",
     "category": "FPS",
     "downloadLink": "https://www.callofduty.com/mobile",
     "description": "Experience the thrill of Call of Duty with iconic multiplayer maps, various game modes, and intense battle royale action.",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "title": "Genshin Impact",
-    "coverPhoto": "https://example.com/images/genshin.png",
+    "coverPhoto": "https://i.ibb.co.com/nNWMT50k/Genshin-Impact.jpg",
     "category": "RPG",
     "downloadLink": "https://genshin.hoyoverse.com/",
     "description": "An open-world action RPG featuring stunning visuals, elemental combat, and an expansive fantasy world to explore.",
@@ -52,7 +52,7 @@
   {
     "id": "6",
     "title": "Minecraft",
-    "coverPhoto": "https://example.com/images/minecraft.png",
+    "coverPhoto": "https://i.ibb.co.com/tM8H9pkZ/mine-Craft.jpg",
     "category": "Sandbox",
     "downloadLink": "https://www.minecraft.net/",
     "description": "Explore infinite worlds and build everything from simple homes to grand castles in this creative sandbox game.",
