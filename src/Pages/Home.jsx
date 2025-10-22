@@ -1,4 +1,5 @@
 import Banner from "./homeElements/Banner";
+import Newsletter from "./homeElements/Newsletter";
 import PopularGames from "./homeElements/PopularGames";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       {/* <Features /> */}
       {/* <PopularGames /> */}
       <PopularGames></PopularGames>
+      <Newsletter></Newsletter>
       {/* <Testimonials /> */}
     </main>
   );

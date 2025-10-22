@@ -32,7 +32,7 @@
   {
     "id": "4",
     "title": "Among Us",
-    "coverPhoto": "https://example.com/images/among-us.png",
+    "coverPhoto": "https://i.ibb.co.com/Fq3P4Ykh/Among-Us.jpg",
     "category": "Strategy",
     "downloadLink": "https://www.innersloth.com/games/among-us/",
     "description": "A multiplayer social deduction game where crewmates must identify impostors before it's too late.",
@@ -42,7 +42,7 @@
   {
     "id": "5",
     "title": "Clash of Clans",
-    "coverPhoto": "https://example.com/images/coc.png",
+    "coverPhoto": "https://i.ibb.co.com/k6m7VLgT/coc.jpg",
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashofclans/",
     "description": "Build your village, train troops, and battle with millions of players in this epic combat strategy game.",
@@ -62,7 +62,7 @@
   {
     "id": "7",
     "title": "Candy Crush Saga",
-    "coverPhoto": "https://example.com/images/candy-crush.png",
+    "coverPhoto": "https://i.ibb.co.com/pvQCtLx4/candy.jpg",
     "category": "Puzzle",
     "downloadLink": "https://king.com/game/candycrush",
     "description": "Match colorful candies and solve challenging puzzles in this addictive match-3 game with hundreds of levels.",
@@ -72,7 +72,7 @@
   {
     "id": "8",
     "title": "Subway Surfers",
-    "coverPhoto": "https://example.com/images/subway-surfers.png",
+    "coverPhoto": "https://i.ibb.co.com/219hnpPF/subway.jpg",
     "category": "Arcade",
     "downloadLink": "https://www.sybo.com/games/subway-surfers/",
     "description": "Dash through the subway tracks, dodge trains, and collect coins in this endless runner adventure.",
@@ -82,7 +82,7 @@
   {
     "id": "9",
     "title": "Roblox",
-    "coverPhoto": "https://example.com/images/roblox.png",
+    "coverPhoto": "https://i.ibb.co.com/NdsPThDq/roblox.jpg",
     "category": "Sandbox",
     "downloadLink": "https://www.roblox.com/",
     "description": "Create, share experiences, and play millions of user-generated games in this immersive platform.",
@@ -92,7 +92,7 @@
   {
     "id": "10",
     "title": "Free Fire",
-    "coverPhoto": "https://example.com/images/free-fire.png",
+    "coverPhoto": "https://i.ibb.co.com/spLVDKqB/ff.jpg",
     "category": "FPS",
     "downloadLink": "https://ff.garena.com/",
     "description": "Survive in 10-minute battle royale matches with fast-paced action and unique character abilities.",
@@ -102,7 +102,7 @@
   {
     "id": "11",
     "title": "Clash Royale",
-    "coverPhoto": "https://example.com/images/clash-royale.png",
+    "coverPhoto": "https://i.ibb.co.com/jPGQ14Bn/clash-Royal.jpg",
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashroyale/",
     "description": "Real-time multiplayer card battle game featuring characters from Clash of Clans in fast-paced arena combat.",
@@ -112,7 +112,7 @@
   {
     "id": "12",
     "title": "Mobile Legends: Bang Bang",
-    "coverPhoto": "https://example.com/images/mlbb.png",
+    "coverPhoto": "https://i.ibb.co.com/3Yv5YPgr/Mobile-Legends-Bang-Bang.jpg",
     "category": "MOBA",
     "downloadLink": "https://m.mobilelegends.com/",
     "description": "5v5 MOBA battles with over 100 heroes, strategic team fights, and fast-paced action in 10-minute matches.",
@@ -122,7 +122,7 @@
   {
     "id": "13",
     "title": "Asphalt 9: Legends",
-    "coverPhoto": "https://example.com/images/asphalt9.png",
+    "coverPhoto": "https://i.ibb.co.com/SkkpV0P/asp-9.jpg",
     "category": "Racing",
     "downloadLink": "https://www.asphaltlegends.com/",
     "description": "Race with premium licensed cars through spectacular locations with console-quality graphics and arcade action.",
@@ -132,7 +132,7 @@
   {
     "id": "14",
     "title": "Brawl Stars",
-    "coverPhoto": "https://example.com/images/brawl-stars.png",
+    "coverPhoto": "https://i.ibb.co.com/LWPgzgQ/Brawl-Stars.jpg",
     "category": "Action",
     "downloadLink": "https://supercell.com/en/games/brawlstars/",
     "description": "Fast-paced 3v3 multiplayer brawler with unique game modes, diverse characters, and quick matches.",
@@ -142,7 +142,7 @@
   {
     "id": "15",
     "title": "Temple Run 2",
-    "coverPhoto": "https://example.com/images/temple-run.png",
+    "coverPhoto": "https://i.ibb.co.com/v6SdYQ7Y/Temple-Run-2.jpg",
     "category": "Arcade",
     "downloadLink": "https://www.imangistudios.com/games/temple-run-2/",
     "description": "Run for your life in this thrilling endless runner with new obstacles, power-ups, and stunning environments.",
@@ -152,7 +152,7 @@
   {
     "id": "16",
     "title": "Pokémon GO",
-    "coverPhoto": "https://example.com/images/pokemon-go.png",
+    "coverPhoto": "https://i.ibb.co.com/pBLvp2qH/Pok-mon-GO.jpg",
     "category": "AR",
     "downloadLink": "https://pokemongolive.com/",
     "description": "Explore the real world to catch Pokémon, battle in gyms, and raid with friends in this augmented reality game.",
@@ -162,7 +162,7 @@
   {
     "id": "17",
     "title": "8 Ball Pool",
-    "coverPhoto": "https://example.com/images/8ball-pool.png",
+    "coverPhoto": "https://i.ibb.co.com/YFR4PQ29/8-Ball-Pool.jpg",
     "category": "Sports",
     "downloadLink": "https://www.miniclip.com/games/8-ball-pool-mobile/",
     "description": "Play pool online against opponents worldwide with realistic physics and various game modes.",
@@ -172,7 +172,7 @@
   {
     "id": "18",
     "title": "Garena Free Fire MAX",
-    "coverPhoto": "https://example.com/images/ff-max.png",
+    "coverPhoto": "https://i.ibb.co.com/JjZhrPhm/Garena-Free-Fire-MAX.jpg",
     "category": "FPS",
     "downloadLink": "https://ff.garena.com/max/",
     "description": "Enhanced version of Free Fire with improved graphics, effects, and immersive battle royale gameplay.",
@@ -182,7 +182,7 @@
   {
     "id": "19",
     "title": "Shadow Fight 3",
-    "coverPhoto": "https://example.com/images/shadow-fight-3.png",
+    "coverPhoto": "https://i.ibb.co.com/rGGgX4mK/Shadow-Fight-3.jpg",
     "category": "Fighting",
     "downloadLink": "https://www.nekki.com/games/shadow-fight-3/",
     "description": "Epic martial arts action with stunning animations, RPG elements, and intense shadow combat battles.",
@@ -192,7 +192,7 @@
   {
     "id": "20",
     "title": "Hill Climb Racing 2",
-    "coverPhoto": "https://example.com/images/hill-climb-2.png",
+    "coverPhoto": "https://i.ibb.co.com/zypxYfk/Hill-Climb-Racing-2.jpg",
     "category": "Racing",
     "downloadLink": "https://www.fingersoft.com/game/hill-climb-racing-2/",
     "description": "Physics-based driving game with challenging terrains, vehicle upgrades, and multiplayer racing action.",

@@ -79,7 +79,7 @@ export default function Navbar() {
           <Link to="/" className="text-2xl font-bold flex items-center gap-2">
             <span className="text-white">Ga</span>
             <img src={logo} alt="logo" className="w-8 h-8" />
-            <span className="text-white">mehub</span>
+            <span className="text-white">ehub</span>
           </Link>
         </div>
 

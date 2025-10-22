@@ -1,6 +1,6 @@
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router";
-import { use, useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
 import { AuthContext } from "../Provider/AuthContext";
@@ -9,7 +9,7 @@ import { toast, ToastContainer } from "react-toastify";
 export default function Login() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
-  const { signInWithEmail,signInWithGoogle  } = use(AuthContext);
+  const { signInWithEmail, signInWithGoogle } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -33,14 +33,11 @@ export default function Login() {
         } else {
           toast.error("Login failed. Please try again.");
         }
-
         console.log(error.code);
       });
   };
 
-
-
-const handleGoogleLogin = () => {
+  const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
         toast.success("Logged in with Google!");
@@ -52,78 +49,89 @@ const handleGoogleLogin = () => {
       });
   };
 
-
-
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-        {/* Right: Form */}
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleLogin} className="card-body">
-            <fieldset className="fieldset">
-              <label className="label">Email</label>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900">
+      <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
+        {/* Title */}
+        <h1 className="text-3xl font-bold text-center text-white mb-6">
+          Login to <span className="text-purple-400">Gamehub</span>
+        </h1>
+
+        {/* Form */}
+        <form onSubmit={handleLogin} className="space-y-4">
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Email</label>
+            <input
+              type="email"
+              name="email"
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Password</label>
+            <div className="relative">
               <input
-                type="email"
-                name="email"
-                className="input"
-                placeholder="Email"
+                type={show ? "text" : "password"}
+                name="password"
+                className="w-full px-4 py-2 rounded-md bg-gray-700 text-white pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Enter your password"
+                required
               />
+              <span
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xl cursor-pointer text-gray-400"
+                onClick={() => setShow(!show)}
+              >
+                {show ? <FaEye /> : <IoEyeOff />}
+              </span>
+            </div>
+          </div>
 
-              <label className="label">Password</label>
-              <div className="relative">
-                <input
-                  type={show ? "text" : "password"}
-                  className="input w-full pr-10"
-                  name="password"
-                  placeholder="Password"
-                />
-                <span
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xl cursor-pointer"
-                  onClick={() => setShow(!show)}
-                >
-                  {show ? <FaEye /> : <IoEyeOff />}
-                </span>
-              </div>
+          <div className="flex justify-between items-center text-sm">
+            <Link
+              to="/forgot-password"
+              state={{ email }}
+              className="text-purple-400 hover:text-pink-400"
+            >
+              Forgot password?
+            </Link>
+          </div>
 
-              <div className="flex justify-between items-center mt-2">
-                <Link
-                  to="/forgot-password"
-                   state={{ email }}
-                  className="link link-hover text-sm"
-                >
-                  Forgot password?
-                </Link>
-              </div>
-              <button className="btn btn-neutral mt-4">Login</button>
-            </fieldset>
+          <button
+            type="submit"
+            className="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-600 
+                       hover:from-purple-700 hover:to-pink-700 rounded-md 
+                       font-semibold text-white transition"
+          >
+            Login
+          </button>
+        </form>
 
-            {/* 👇 Extra line */}
-            <p className="text-sm mt-3 text-center">
-              Don’t have an account?{" "}
-              <Link to="/register" className="link link-primary">
-                Register
-              </Link>
-              <div>
-                <button onClick={handleGoogleLogin} type="button" className="btn w-full mt-3">
-                  <FcGoogle size={24} />
-                  Continue with Google
-                </button>
-              </div>
-            </p>
-          </form>
-        </div>
+        {/* Divider */}
+        <div className="my-6 text-center text-gray-400">OR</div>
 
-        {/* Left: Text */}
-        <div className="text-center lg:text-left lg:mr-10">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-        </div>
+        {/* Google Login */}
+        <button
+          onClick={handleGoogleLogin}
+          type="button"
+          className="w-full flex items-center justify-center gap-2 py-2 
+                     bg-gray-700 hover:bg-gray-600 rounded-md text-white transition"
+        >
+          <FcGoogle size={24} /> Continue with Google
+        </button>
+
+        {/* Register Link */}
+        <p className="text-sm text-center text-gray-300 mt-4">
+          Don’t have an account?{" "}
+          <Link to="/register" className="text-purple-400 hover:text-pink-400">
+            Register
+          </Link>
+        </p>
       </div>
-      <ToastContainer></ToastContainer>
+      <ToastContainer />
     </div>
   );
 }

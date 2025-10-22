@@ -7,7 +7,6 @@ import { IoEyeOff } from "react-icons/io5";
 
 export default function Register() {
   const { user, createWithEmail } = useContext(AuthContext);
-
   const [show, setShow] = useState(false);
 
   // ✅ Password Validation Function
@@ -60,81 +59,88 @@ export default function Register() {
   };
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-        {/* Right: Form */}
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleRegistration} className="card-body">
-            <fieldset className="fieldset">
-              {/* Name */}
-              <label className="label">Name</label>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900">
+      <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
+        {/* Title */}
+        <h1 className="text-3xl font-bold text-center text-white mb-6">
+          Create your <span className="text-purple-400">Gamehub</span> account
+        </h1>
+
+        {/* Form */}
+        <form onSubmit={handleRegistration} className="space-y-4">
+          {/* Name */}
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Name</label>
+            <input
+              type="text"
+              name="name"
+              className="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Email</label>
+            <input
+              type="email"
+              name="email"
+              className="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          {/* Photo URL */}
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Photo URL</label>
+            <input
+              type="text"
+              name="photo"
+              className="w-full px-4 py-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              placeholder="Photo URL"
+            />
+          </div>
+
+          {/* Password */}
+          <div>
+            <label className="block text-sm mb-1 text-gray-300">Password</label>
+            <div className="relative">
               <input
-                type="text"
-                name="name"
-                className="input"
-                placeholder="Full Name"
+                type={show ? "text" : "password"}
+                name="password"
+                className="w-full px-4 py-2 rounded-md bg-gray-700 text-white pr-10 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Password"
                 required
               />
+              <span
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xl cursor-pointer text-gray-400"
+                onClick={() => setShow(!show)}
+              >
+                {show ? <FaEye /> : <IoEyeOff />}
+              </span>
+            </div>
+          </div>
 
-              {/* Email */}
-              <label className="label">Email</label>
-              <input
-                type="email"
-                name="email"
-                className="input"
-                placeholder="Email"
-                required
-              />
+          {/* Submit */}
+          <button
+            type="submit"
+            className="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-600 
+                       hover:from-purple-700 hover:to-pink-700 rounded-md 
+                       font-semibold text-white transition"
+          >
+            Register
+          </button>
+        </form>
 
-              {/* photoURL */}
-              <label className="label">Photo URL</label>
-              <input
-                type="text"
-                name="photo"
-                className="input"
-                placeholder="Photo URL"
-              />
-
-              {/* Password */}
-              <label className="label">Password</label>
-              <div className="relative">
-                <input
-                  type={show ? "text" : "password"}   // ✅ toggle type
-                  name="password"
-                  className="input w-full pr-10"      // ✅ padding-right for icon
-                  placeholder="Password"
-                  required
-                />
-                <span
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xl cursor-pointer"
-                  onClick={() => setShow(!show)}
-                >
-                  {show ? <FaEye /> : <IoEyeOff />}
-                </span>
-              </div>
-
-              {/* Submit */}
-              <button className="btn btn-primary mt-4">Register</button>
-            </fieldset>
-
-            {/* Extra line */}
-            <p className="text-sm mt-3 text-center">
-              Already have an account?{" "}
-              <Link to="/login" className="link link-primary">
-                Login
-              </Link>
-            </p>
-          </form>
-        </div>
-
-        {/* Left: Text */}
-        <div className="text-center lg:text-left lg:mr-10">
-          <h1 className="text-5xl font-bold">Create your account</h1>
-          <p className="py-6">
-            Sign up with your email and password, add your name and profile
-            photo, and start exploring Gamehub with your personalized account.
-          </p>
-        </div>
+        {/* Extra line */}
+        <p className="text-sm mt-4 text-center text-gray-300">
+          Already have an account?{" "}
+          <Link to="/login" className="text-purple-400 hover:text-pink-400">
+            Login
+          </Link>
+        </p>
       </div>
       <ToastContainer />
     </div>
