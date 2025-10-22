@@ -1,13 +1,15 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
+import { updateProfile } from "firebase/auth"; // ✅ added
 
 export default function Register() {
-  const { user, createWithEmail } = useContext(AuthContext);
+  const { createWithEmail, logOut } = useContext(AuthContext);
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
 
   // ✅ Password Validation Function
   const validatePassword = (password) => {
@@ -40,8 +42,21 @@ export default function Register() {
 
     createWithEmail(email, password)
       .then((result) => {
-        toast.success("Registration successful!");
-        console.log(result);
+        const user = result.user;
+
+        // ✅ Update profile with name and photo
+        updateProfile(user, {
+          displayName,
+          photoURL,
+        })
+          .then(() => {
+            toast.success("Registration successful!");
+            logOut().then(() => navigate("/login"));
+          })
+          .catch((error) => {
+            toast.error("Profile update failed.");
+            console.error(error.code);
+          });
       })
       .catch((error) => {
         const errorCode = error.code;

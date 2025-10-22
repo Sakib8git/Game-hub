@@ -1,9 +1,22 @@
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { LogOut, Home, Trophy, User } from "lucide-react";
 import logo from "../assets/gamepad.png";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthContext";
 
 export default function Navbar() {
-  const user = null;
+  const { user, logOut } = useContext(AuthContext); // ✅ context থেকে user ও logOut
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        navigate("/login");
+      })
+      .catch((error) => {
+        console.error("Logout failed:", error.code);
+      });
+  };
 
   const navLinks = (
     <>
@@ -33,19 +46,6 @@ export default function Navbar() {
           <span>All Games</span>
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          to="/profile"
-          className={({ isActive }) =>
-            isActive
-              ? "text-purple-400 font-semibold flex items-center space-x-1"
-              : "flex items-center space-x-1 hover:text-purple-300 transition"
-          }
-        >
-          <User className="w-4 h-4" />
-          <span>Profile</span>
-        </NavLink>
-      </li>
     </>
   );
 
@@ -54,7 +54,6 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Left side: Dropdown + Logo */}
         <div className="flex items-center gap-4">
-          {/* ✅ Dropdown left of logo */}
           <div className="dropdown lg:hidden">
             <label tabIndex={0} className="btn btn-sm btn-ghost text-white">
               <svg
@@ -64,7 +63,12 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
             </label>
             <ul
@@ -83,7 +87,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Right side: Nav links (lg only) + Auth buttons */}
+        {/* Right side: Nav links + Auth */}
         <div className="flex items-center gap-6">
           <ul className="hidden lg:flex items-center gap-6">{navLinks}</ul>
 
@@ -104,14 +108,14 @@ export default function Navbar() {
             </div>
           ) : (
             <div className="flex items-center space-x-4">
-              <img
-                src={user.photoURL}
-                alt={user.name}
-                className="w-10 h-10 rounded-full border-2 border-purple-400 cursor-pointer hover:border-pink-400 transition"
-              />
-              <button className="hover:text-red-400 transition">
-                <LogOut className="w-5 h-5" />
-              </button>
+              <Link to="/profile">
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName}
+                  title={user.displayName}
+                  className="w-10 h-10 rounded-full border-2 border-purple-400 cursor-pointer hover:border-pink-400 transition"
+                />
+              </Link>
             </div>
           )}
         </div>

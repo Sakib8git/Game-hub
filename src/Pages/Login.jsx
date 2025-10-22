@@ -1,5 +1,5 @@
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useContext, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
@@ -10,7 +10,7 @@ export default function Login() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
   const { signInWithEmail, signInWithGoogle } = useContext(AuthContext);
-
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const formTarget = e.target;
@@ -19,8 +19,9 @@ export default function Login() {
     const password = formTarget.password.value;
     signInWithEmail(email, password)
       .then((result) => {
-        console.log("Logged in:", result.user);
         toast.success("Login successful!");
+        console.log("Logged in:", result.user);
+        navigate("/");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -41,7 +42,10 @@ export default function Login() {
     signInWithGoogle()
       .then((result) => {
         toast.success("Logged in with Google!");
+        
         console.log("Google User:", result.user);
+        navigate("/");
+
       })
       .catch((error) => {
         toast.error("Google login failed!");
