@@ -30,12 +30,12 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
-  // ✅ Forgot Password
+  // Forgot Password
   const resetPassword = (email) => {
     return sendPasswordResetEmail(auth, email);
   };
 
-  // ✅ Logout function
+  // Logout function
   const logOut = () => {
     return signOut(auth);
   };
@@ -56,7 +56,7 @@ const AuthProvider = ({ children }) => {
     updateUserProfile
   };
 
-// ✅ Auth state observer
+// Auth state observer
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUSer(currentUser);

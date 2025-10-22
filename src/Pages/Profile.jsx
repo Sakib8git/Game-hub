@@ -27,6 +27,7 @@ export default function Profile() {
 
   return (
     <section className="min-h-screen bg-gray-900 text-white pt-24 pb-16">
+      <title>Your Profile</title>
       <div className="container mx-auto px-4 flex flex-col items-center">
         {/* Profile Card */}
         <div className="bg-gray-800 rounded-lg shadow-lg p-8 w-full max-w-md text-center">

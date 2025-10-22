@@ -5,6 +5,7 @@ export default function ErrorPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6">
       {/* Error Code */}
+      <title>Error-404</title>
       <h1 className="text-9xl font-extrabold text-purple-600 tracking-widest">
         404
       </h1>

@@ -5,18 +5,10 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 
 export default function Navbar() {
-  const { user, logOut } = useContext(AuthContext); // ✅ context থেকে user ও logOut
-  const navigate = useNavigate();
+  const { user,} = useContext(AuthContext);
+  
 
-  const handleLogout = () => {
-    logOut()
-      .then(() => {
-        navigate("/login");
-      })
-      .catch((error) => {
-        console.error("Logout failed:", error.code);
-      });
-  };
+ 
 
   const navLinks = (
     <>
@@ -81,9 +73,9 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold flex items-center gap-2">
-            <span className="text-white">Ga</span>
+            <span className="text-white fontStyle">GA</span>
             <img src={logo} alt="logo" className="w-8 h-8" />
-            <span className="text-white">ehub</span>
+            <span className="text-white fontStyle">E-HUB</span>
           </Link>
         </div>
 

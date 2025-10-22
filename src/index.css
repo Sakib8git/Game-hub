@@ -1,2 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+.fontStyle{
+    font-family: "Stalinist One", sans-serif;
+}

@@ -1,15 +1,19 @@
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { useContext, useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { IoEyeOff } from "react-icons/io5";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 
+
 export default function Login() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
   const { signInWithEmail, signInWithGoogle } = useContext(AuthContext);
+  const location = useLocation();
+const from = location.state?.from || "/";
+
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
@@ -21,7 +25,7 @@ export default function Login() {
       .then((result) => {
         toast.success("Login successful!");
         console.log("Logged in:", result.user);
-        navigate("/");
+        navigate(from);
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -42,10 +46,9 @@ export default function Login() {
     signInWithGoogle()
       .then((result) => {
         toast.success("Logged in with Google!");
-        
-        console.log("Google User:", result.user);
-        navigate("/");
 
+        console.log("Google User:", result.user);
+        navigate(from);
       })
       .catch((error) => {
         toast.error("Google login failed!");
@@ -55,6 +58,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900">
+      <title>Login</title>
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
         {/* Title */}
         <h1 className="text-3xl font-bold text-center text-white mb-6">

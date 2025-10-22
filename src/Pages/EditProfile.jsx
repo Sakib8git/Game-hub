@@ -26,9 +26,12 @@ export default function EditProfile() {
 
   return (
     <section className="min-h-screen bg-gray-900 text-white pt-24 pb-16">
+      <title>Edit Profile</title>
       <div className="container mx-auto px-4 flex justify-center">
         <div className="bg-gray-800 rounded-lg shadow-lg p-8 w-full max-w-md">
-          <h2 className="text-2xl font-bold text-center mb-6">Update Profile</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">
+            Update Profile
+          </h2>
 
           <form onSubmit={handleUpdate} className="space-y-4">
             <div>
@@ -45,7 +48,9 @@ export default function EditProfile() {
             </div>
 
             <div>
-              <label className="block text-sm mb-1 text-gray-300">Photo URL</label>
+              <label className="block text-sm mb-1 text-gray-300">
+                Photo URL
+              </label>
               <input
                 type="text"
                 value={photoURL}

@@ -17,6 +17,7 @@ export default function GameDetails() {
   return (
     <section className="min-h-screen bg-gray-900 text-white">
       {/* Top spacing so it doesn't stick to navbar */}
+      <title>{game.title}</title>
       <div className="container mx-auto px-4 pt-24 pb-16">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Cover Photo / Banner */}
