@@ -9,6 +9,7 @@ import ForgotPassword from "../Pages/ForgotPassword";
 import AllGames from "../Pages/AllGames";
 import GameDetails from "../Pages/GameDetails";
 import ErrorPage from "../Pages/ErrorPage";
+import EditProfile from "../Pages/EditProfile";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         Component: Profile,
+      },
+      {
+        path: "/my-profile",
+        Component: EditProfile,
       },
       {
         path: "/login",

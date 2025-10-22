@@ -41,9 +41,10 @@ export default function Profile() {
           <div className="flex justify-center gap-4 mt-6">
             {/* Edit Profile */}
             <button
+              onClick={() => navigate("/my-profile")}
               className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 
-                         hover:from-purple-700 hover:to-pink-700 rounded-md 
-                         font-semibold transition"
+             hover:from-purple-700 hover:to-pink-700 rounded-md 
+             font-semibold transition"
             >
               Edit Profile
             </button>
