@@ -61,7 +61,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-gray-900 via-purple-900 to-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-gray-900 via-purple-900 to-gray-900 py-20 px-3">
       <title>Login</title>
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold text-center text-white mb-6">
