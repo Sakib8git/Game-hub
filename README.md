@@ -6,7 +6,10 @@ GAME-HUB is a responsive React application that showcases a list of games with a
 
 ## Live Site
 
-[GAME-HUB](https://game-hub-library.netlify.app/games)
+[GAME-HUB](https://game-hub-library.netlify.app/)
+
+--------BackUP link
+[GAME-HUB BackUP](https://game-hub-88f.pages.dev/)
 
 ---
 
