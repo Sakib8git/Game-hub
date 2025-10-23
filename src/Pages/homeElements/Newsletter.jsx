@@ -1,11 +1,8 @@
-// src/Pages/HomeElements/Newsletter.jsx
 export default function Newsletter() {
   return (
     <section className="py-16 bg-gray-900 text-white">
       <div className="container mx-auto px-4 flex justify-center">
-        {/* Box Wrapper */}
         <div className="bg-gray-800 rounded-lg shadow-lg p-8 w-full max-w-2xl text-center">
-          {/* Title */}
           <h2 className="text-4xl font-bold mb-4">📬 Join Our Newsletter</h2>
           <p className="text-gray-300 mb-8">
             Stay updated with the latest games, news, and exclusive offers.
@@ -24,16 +21,13 @@ export default function Newsletter() {
 
             <button
               type="submit"
-              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 
+              className="px-6 py-3 bg-linear-to-r from-purple-600 to-pink-600 
                          hover:from-purple-700 hover:to-pink-700 rounded-md 
                          font-semibold transition transform hover:scale-105"
             >
               Subscribe
             </button>
           </form>
-
-          
-          
         </div>
       </div>
     </section>

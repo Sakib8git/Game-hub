@@ -1,4 +1,3 @@
-// src/Pages/EditProfile.jsx
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
@@ -12,11 +11,11 @@ export default function EditProfile() {
 
   const handleUpdate = (e) => {
     e.preventDefault();
-
+// -------------
     updateUserProfile({ displayName: name, photoURL })
       .then(() => {
         toast.success("Profile updated successfully!");
-        setTimeout(() => navigate("/profile"), 1000);
+         navigate("/profile"), 1000;
       })
       .catch((error) => {
         toast.error("Failed to update profile.");

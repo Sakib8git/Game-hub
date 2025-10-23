@@ -5,13 +5,16 @@ import { motion } from "framer-motion";
 
 export default function PopularGames() {
   const games = useLoaderData();
+  // console.log(games);
   const { user } = useContext(AuthContext);
+  // console.log(user);
   const navigate = useNavigate();
 
   const topGames = [...games]
     .sort((a, b) => parseFloat(b.ratings) - parseFloat(a.ratings))
     .slice(0, 3);
-
+  // console.log(topGames);
+  // ---------------------------------------
   const handleClick = (id) => {
     if (!user) {
       navigate("/login", { state: { from: `/games/${id}` } });

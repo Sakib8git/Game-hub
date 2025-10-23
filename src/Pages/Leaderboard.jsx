@@ -1,4 +1,3 @@
-import { Trophy } from "lucide-react";
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
@@ -7,7 +6,7 @@ export default function Leaderboard() {
   const { user, loading } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  // 🔐 Redirect if not logged in
+  //!if not logged in
   useEffect(() => {
     if (!loading && !user) {
       navigate("/login", { state: { from: "/leaderboard" } });
@@ -26,11 +25,10 @@ export default function Leaderboard() {
     { name: "Ratul", rating: 4.1 },
     { name: "Shuvo", rating: 4.0 },
   ];
-
+  // load---------------------
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center text-white">
-        <title>Game-Hub Leaderboard</title>
         <p className="text-lg">Checking access...</p>
       </div>
     );
@@ -38,6 +36,7 @@ export default function Leaderboard() {
 
   return (
     <section className="min-h-screen bg-gray-900 text-white pt-24 pb-16">
+      <title>Game-Hub Leaderboard</title>
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-10">🏆 Top Players</h2>
 
@@ -62,7 +61,6 @@ export default function Leaderboard() {
           </ul>
         </div>
 
-        {/* ✅ Bottom Highlight Section */}
         <div className="bg-gray-800 rounded-lg p-6 text-center shadow-md">
           <h3 className="text-2xl font-bold mb-2 text-purple-400">
             Your Rank Matters

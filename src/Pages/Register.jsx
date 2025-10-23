@@ -11,23 +11,25 @@ export default function Register() {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 
-  // ✅ Password Validation Function
+  // Pass validatePassword
   const validatePassword = (password) => {
     if (password.length < 6) {
       toast.error("Password must be at least 6 characters long.");
       return false;
     }
+    // upcase
     if (!/[A-Z]/.test(password)) {
       toast.error("Password must contain at least one uppercase letter.");
       return false;
     }
+    // low case
     if (!/[a-z]/.test(password)) {
       toast.error("Password must contain at least one lowercase letter.");
       return false;
     }
     return true;
   };
-
+  // handleRegistration--------------------------------
   const handleRegistration = (e) => {
     e.preventDefault();
     const formTarget = e.target;
@@ -35,16 +37,16 @@ export default function Register() {
     const photoURL = formTarget.photo.value;
     const email = formTarget.email.value;
     const password = formTarget.password.value;
-
+    // jodi pass valid na hoy
     if (!validatePassword(password)) {
       return;
     }
-
+    // createWithEmail-------------------------
     createWithEmail(email, password)
       .then((result) => {
         const user = result.user;
 
-        // ✅ Update profile with name and photo
+        // up profile-------------
         updateProfile(user, {
           displayName,
           photoURL,
@@ -79,14 +81,11 @@ export default function Register() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900">
       <title>Register</title>
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
-        {/* Title */}
         <h1 className="text-3xl font-bold text-center text-white mb-6">
           Create your <span className="text-purple-400">Gamehub</span> account
         </h1>
 
-        {/* Form */}
         <form onSubmit={handleRegistration} className="space-y-4">
-          {/* Name */}
           <div>
             <label className="block text-sm mb-1 text-gray-300">Name</label>
             <input
@@ -98,7 +97,6 @@ export default function Register() {
             />
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-sm mb-1 text-gray-300">Email</label>
             <input
@@ -110,7 +108,6 @@ export default function Register() {
             />
           </div>
 
-          {/* Photo URL */}
           <div>
             <label className="block text-sm mb-1 text-gray-300">
               Photo URL
@@ -123,7 +120,6 @@ export default function Register() {
             />
           </div>
 
-          {/* Password */}
           <div>
             <label className="block text-sm mb-1 text-gray-300">Password</label>
             <div className="relative">
@@ -143,10 +139,9 @@ export default function Register() {
             </div>
           </div>
 
-          {/* Submit */}
           <button
             type="submit"
-            className="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-600 
+            className="w-full py-2 bg-linear-to-r from-purple-600 to-pink-600 
                        hover:from-purple-700 hover:to-pink-700 rounded-md 
                        font-semibold text-white transition"
           >
@@ -154,7 +149,6 @@ export default function Register() {
           </button>
         </form>
 
-        {/* Extra line */}
         <p className="text-sm mt-4 text-center text-gray-300">
           Already have an account?{" "}
           <Link to="/login" className="text-purple-400 hover:text-pink-400">

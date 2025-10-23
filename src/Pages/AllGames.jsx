@@ -25,8 +25,8 @@ export default function AllGames() {
     }
   };
 
-  // Animation variants
-  const containerVariants = {
+  // motion add
+  const PageMotion = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -36,7 +36,7 @@ export default function AllGames() {
     },
   };
 
-  const cardVariants = {
+  const cardMotion = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
   };
@@ -55,7 +55,7 @@ export default function AllGames() {
         </motion.h2>
 
         <motion.div
-          variants={containerVariants}
+          variants={PageMotion}
           initial="hidden"
           animate="visible"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -63,7 +63,7 @@ export default function AllGames() {
           {games.map((game) => (
             <motion.div
               key={game.id}
-              variants={cardVariants}
+              variants={cardMotion}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden 
                          hover:scale-105 transform transition duration-300 
                          border border-purple-700/40 flex flex-col"

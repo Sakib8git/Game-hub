@@ -7,7 +7,7 @@ import { HashLoader } from "react-spinners";
 import TrustedStats from "./TrustedStats";
 
 export default function Home() {
-  const {loading}= use(AuthContext)
+  const { loading } = use(AuthContext);
   if (loading) {
     return (
       <div className="w-full flex justify-center items-center py-70 bg-gray-900">
@@ -17,17 +17,10 @@ export default function Home() {
   }
   return (
     <main className="relative z-10">
-      
-      <Banner />
-
-      {/* 🔮 Future Sections */}
-      {/* <Features /> */}
-      {/* <PopularGames /> */}
+      <Banner></Banner>
       <PopularGames></PopularGames>
       <TrustedStats></TrustedStats>
       <Newsletter></Newsletter>
-      {/* <Testimonials /> */}
     </main>
   );
 }
-

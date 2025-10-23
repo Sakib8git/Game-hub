@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: () => fetch("/gameData.json"), // ✅ short form loader
+        loader: () => fetch("/gameData.json"),
       },
       {
         path: "/leaderboard",
@@ -49,12 +49,12 @@ const router = createBrowserRouter([
       {
         path: "/games",
         Component: AllGames,
-        loader: () => fetch("/gameData.json"), // ✅ same short form
+        loader: () => fetch("/gameData.json"),
       },
       {
-        path: "/games/:id", // ✅ dynamic route
+        path: "/games/:id",
         Component: GameDetails,
-        loader: () => fetch("/gameData.json"), // সব data load হবে, তারপর filter করব
+        loader: () => fetch("/gameData.json"),
       },
     ],
   },

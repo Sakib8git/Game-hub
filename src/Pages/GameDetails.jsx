@@ -9,7 +9,7 @@ export default function GameDetails() {
   const games = useLoaderData();
   const { id } = useParams();
   const game = games.find((g) => g.id === id);
-
+  // game na thakle pabe na
   if (!game) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
@@ -17,7 +17,7 @@ export default function GameDetails() {
       </div>
     );
   }
-
+  // load--------------
   if (loading) {
     return (
       <div className="w-full flex justify-center items-center py-70 bg-gray-900">
@@ -31,7 +31,6 @@ export default function GameDetails() {
       <title>{game.title}</title>
       <div className="container mx-auto px-4 pt-24 pb-16">
         <div className="flex flex-col lg:flex-row gap-10">
-          {/* Cover Photo / Banner */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -45,7 +44,6 @@ export default function GameDetails() {
             />
           </motion.div>
 
-          {/* Primary info */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -86,7 +84,6 @@ export default function GameDetails() {
           </motion.div>
         </div>
 
-        {/* Description section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

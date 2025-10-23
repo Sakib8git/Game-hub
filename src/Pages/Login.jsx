@@ -6,25 +6,29 @@ import { IoEyeOff } from "react-icons/io5";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 
-
 export default function Login() {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
   const { signInWithEmail, signInWithGoogle } = useContext(AuthContext);
   const location = useLocation();
-const from = location.state?.from || "/";
+  const from = location.state?.from || "/";
 
   const navigate = useNavigate();
+  {
+    /* ------------------------handleLogin--------------------------------- */
+  }
   const handleLogin = (e) => {
     e.preventDefault();
     const formTarget = e.target;
 
     const email = formTarget.email.value;
     const password = formTarget.password.value;
+
+    // signInWithEmail---------------------------
     signInWithEmail(email, password)
       .then((result) => {
         toast.success("Login successful!");
-        // console.log("Logged in:", result.user);
+        // console.log( result.user);
         navigate(from);
       })
       .catch((error) => {
@@ -41,13 +45,13 @@ const from = location.state?.from || "/";
         console.log(error.code);
       });
   };
-
+  // ! handleGoogleLogin-------------------------------------------
   const handleGoogleLogin = () => {
     signInWithGoogle()
       .then((result) => {
         toast.success("Logged in with Google!");
 
-        // console.log("Google User:", result.user);
+        // console.log( result.user);
         navigate(from);
       })
       .catch((error) => {
@@ -57,15 +61,13 @@ const from = location.state?.from || "/";
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-gray-900 via-purple-900 to-gray-900">
       <title>Login</title>
       <div className="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8">
-        {/* Title */}
         <h1 className="text-3xl font-bold text-center text-white mb-6">
           Login to <span className="text-purple-400">Gamehub</span>
         </h1>
 
-        {/* Form */}
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <label className="block text-sm mb-1 text-gray-300">Email</label>
@@ -110,7 +112,7 @@ const from = location.state?.from || "/";
 
           <button
             type="submit"
-            className="w-full py-2 bg-gradient-to-r from-purple-600 to-pink-600 
+            className="w-full py-2 bg-linear-to-r from-purple-600 to-pink-600 
                        hover:from-purple-700 hover:to-pink-700 rounded-md 
                        font-semibold text-white transition"
           >
@@ -118,10 +120,10 @@ const from = location.state?.from || "/";
           </button>
         </form>
 
-        {/* Divider */}
+        {/* --------------------------------------------------------- */}
         <div className="my-6 text-center text-gray-400">OR</div>
 
-        {/* Google Login */}
+        {/* google  --------------------------------------*/}
         <button
           onClick={handleGoogleLogin}
           type="button"
@@ -131,7 +133,7 @@ const from = location.state?.from || "/";
           <FcGoogle size={24} /> Continue with Google
         </button>
 
-        {/* Register Link */}
+        {/* Reg --------------------------------------------*/}
         <p className="text-sm text-center text-gray-300 mt-4">
           Don’t have an account?{" "}
           <Link to="/register" className="text-purple-400 hover:text-pink-400">
