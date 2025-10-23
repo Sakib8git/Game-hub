@@ -2,11 +2,19 @@
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 import { useNavigate } from "react-router";
+import { HashLoader } from "react-spinners";
 
 export default function Profile() {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, loading } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  if (loading) {
+    return (
+      <div className="w-full flex justify-center items-center py-70 bg-gray-900">
+        <HashLoader color="#8de6f3" />
+      </div>
+    );
+  }
   if (!user) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
@@ -47,7 +55,7 @@ export default function Profile() {
              hover:from-purple-700 hover:to-pink-700 rounded-md 
              font-semibold transition"
             >
-              Edit Profile
+              Update  Profile
             </button>
 
             {/* Logout */}

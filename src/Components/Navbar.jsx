@@ -13,31 +13,46 @@ export default function Navbar() {
   const navLinks = (
     <>
       <li>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive
-              ? "text-purple-400 font-semibold flex items-center space-x-1"
-              : "flex items-center space-x-1 hover:text-purple-300 transition"
-          }
-        >
-          <Home className="w-4 h-4" />
-          <span>Home</span>
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          to="/games"
-          className={({ isActive }) =>
-            isActive
-              ? "text-purple-400 font-semibold flex items-center space-x-1"
-              : "flex items-center space-x-1 hover:text-purple-300 transition"
-          }
-        >
-          <Trophy className="w-4 h-4" />
-          <span>All Games</span>
-        </NavLink>
-      </li>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "text-purple-400 font-semibold flex items-center space-x-1"
+            : "flex items-center space-x-1 hover:text-purple-300 transition"
+        }
+      >
+        <Home className="w-4 h-4" />
+        <span>Home</span>
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/games"
+        className={({ isActive }) =>
+          isActive
+            ? "text-purple-400 font-semibold flex items-center space-x-1"
+            : "flex items-center space-x-1 hover:text-purple-300 transition"
+        }
+      >
+        <Trophy className="w-4 h-4" />
+        <span>All Games</span>
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/leaderboard"
+        className={({ isActive }) =>
+          isActive
+            ? "text-purple-400 font-semibold flex items-center space-x-1"
+            : "flex items-center space-x-1 hover:text-purple-300 transition"
+        }
+      >
+        <User className="w-4 h-4" />
+        <span>Leaderboard</span>
+      </NavLink>
+    </li>
+
+
     </>
   );
 

@@ -26,7 +26,7 @@ if (loading) {
   };
 
   return (
-    <section className="py-16 bg-gray-900 min-h-screen">
+    <section className="py-30 bg-gray-900 min-h-screen ">
       <title>Game-Hub All Games</title>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-white mb-12">

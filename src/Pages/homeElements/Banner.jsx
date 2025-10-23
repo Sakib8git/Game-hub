@@ -7,7 +7,7 @@ export default function Banner() {
 
   return (
     <section className="relative h-[600px]">
-      <div className="carousel w-full h-[600px]">
+      <div className="carousel w-full h-[700px] pb-25">
         {bannerGames.map((game, index) => (
           <div
             key={game.id}

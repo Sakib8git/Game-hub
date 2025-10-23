@@ -1,7 +1,12 @@
 // src/Pages/GameDetails.jsx
 import { useLoaderData, useParams, Link } from "react-router";
+import { AuthContext } from "../Provider/AuthContext";
+import { use } from "react";
+import { HashLoader } from "react-spinners";
 
 export default function GameDetails() {
+  const {loading}= use(AuthContext)
+  
   const games = useLoaderData();
   const { id } = useParams();
   const game = games.find((g) => g.id === id);
@@ -10,6 +15,13 @@ export default function GameDetails() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
         <h2 className="text-2xl">Game not found!</h2>
+      </div>
+    );
+  }
+  if (loading) {
+    return (
+      <div className="w-full flex justify-center items-center py-70 bg-gray-900">
+        <HashLoader color="#8de6f3" />
       </div>
     );
   }

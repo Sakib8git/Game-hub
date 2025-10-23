@@ -10,6 +10,7 @@ import AllGames from "../Pages/AllGames";
 import GameDetails from "../Pages/GameDetails";
 import ErrorPage from "../Pages/ErrorPage";
 import EditProfile from "../Pages/EditProfile";
+import Leaderboard from "../Pages/Leaderboard";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
         loader: () => fetch("/gameData.json"), // ✅ short form loader
+      },
+      {
+        path: "/leaderboard",
+        Component: Leaderboard,
       },
       {
         path: "/profile",
@@ -51,7 +56,6 @@ const router = createBrowserRouter([
         Component: GameDetails,
         loader: () => fetch("/gameData.json"), // সব data load হবে, তারপর filter করব
       },
-
     ],
   },
   {

@@ -1,7 +1,18 @@
 // src/Pages/ErrorPage.jsx
+import { use } from "react";
 import { Link } from "react-router";
+import { HashLoader } from "react-spinners";
+import { AuthContext } from "../Provider/AuthContext";
 
 export default function ErrorPage() {
+   const {loading}= use(AuthContext)
+    if (loading) {
+      return (
+        <div className="w-full flex justify-center items-center py-70 bg-gray-900">
+          <HashLoader color="#8de6f3" />
+        </div>
+      );
+    }
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6">
       {/* Error Code */}
