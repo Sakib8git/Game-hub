@@ -24,7 +24,7 @@ const from = location.state?.from || "/";
     signInWithEmail(email, password)
       .then((result) => {
         toast.success("Login successful!");
-        console.log("Logged in:", result.user);
+        // console.log("Logged in:", result.user);
         navigate(from);
       })
       .catch((error) => {
@@ -47,7 +47,7 @@ const from = location.state?.from || "/";
       .then((result) => {
         toast.success("Logged in with Google!");
 
-        console.log("Google User:", result.user);
+        // console.log("Google User:", result.user);
         navigate(from);
       })
       .catch((error) => {

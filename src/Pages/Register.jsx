@@ -61,13 +61,15 @@ export default function Register() {
       .catch((error) => {
         const errorCode = error.code;
         if (errorCode === "auth/email-already-in-use") {
-          toast.error("This email is already registered. Please try logging in.");
+          toast.error(
+            "This email is already registered. Please try logging in."
+          );
         } else if (errorCode === "auth/weak-password") {
           toast.error("Password should be at least 6 characters.");
         } else if (errorCode === "auth/invalid-email") {
           toast.error("Please enter a valid email address.");
         } else {
-          toast.error("Something went wrong. Please try again.");
+          toast.error("😣 Something went wrong! Please try again.");
         }
         console.log(errorCode);
       });
@@ -110,7 +112,9 @@ export default function Register() {
 
           {/* Photo URL */}
           <div>
-            <label className="block text-sm mb-1 text-gray-300">Photo URL</label>
+            <label className="block text-sm mb-1 text-gray-300">
+              Photo URL
+            </label>
             <input
               type="text"
               name="photo"

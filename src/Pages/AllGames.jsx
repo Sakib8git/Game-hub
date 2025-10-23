@@ -2,14 +2,14 @@ import { useLoaderData, useNavigate } from "react-router";
 import { use } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 import { HashLoader } from "react-spinners";
+import { motion } from "framer-motion";
 
 export default function AllGames() {
   const games = useLoaderData();
-  const { user, loading } = use(AuthContext); // ✅ check login status
+  const { user, loading } = use(AuthContext);
   const navigate = useNavigate();
 
-
-if (loading) {
+  if (loading) {
     return (
       <div className="w-full flex justify-center items-center py-70 bg-gray-900">
         <HashLoader color="#8de6f3" />
@@ -19,24 +19,51 @@ if (loading) {
 
   const handleViewDetails = (id) => {
     if (!user) {
-      navigate("/login", { state: { from: `/games/${id}` } }); // ✅ save intended route
+      navigate("/login", { state: { from: `/games/${id}` } });
     } else {
-      navigate(`/games/${id}`); // ✅ go to details directly
+      navigate(`/games/${id}`);
     }
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section className="py-30 bg-gray-900 min-h-screen ">
+    <section className="py-30 bg-gray-900 min-h-screen">
       <title>Game-Hub All Games</title>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-center text-white mb-12"
+        >
           🎮 All Games
-        </h2>
+        </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {games.map((game) => (
-            <div
+            <motion.div
               key={game.id}
+              variants={cardVariants}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden 
                          hover:scale-105 transform transition duration-300 
                          border border-purple-700/40 flex flex-col"
@@ -67,7 +94,6 @@ if (loading) {
                 </p>
 
                 <div className="mt-auto flex justify-between items-center">
-                  {/* ✅ View Details with login check */}
                   <button
                     onClick={() => handleViewDetails(game.id)}
                     className="text-purple-400 hover:text-pink-400 text-sm font-semibold"
@@ -87,9 +113,9 @@ if (loading) {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

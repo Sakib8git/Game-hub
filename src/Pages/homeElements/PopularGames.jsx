@@ -1,22 +1,22 @@
 import { useLoaderData, useNavigate } from "react-router";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthContext";
+import { motion } from "framer-motion";
 
 export default function PopularGames() {
   const games = useLoaderData();
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  // ✅ rating অনুযায়ী sort করে শীর্ষ ৩টা নিলাম
   const topGames = [...games]
     .sort((a, b) => parseFloat(b.ratings) - parseFloat(a.ratings))
     .slice(0, 3);
 
   const handleClick = (id) => {
     if (!user) {
-      navigate("/login", { state: { from: `/games/${id}` } }); // ✅ login with redirect
+      navigate("/login", { state: { from: `/games/${id}` } });
     } else {
-      navigate(`/games/${id}`); // ✅ go to details
+      navigate(`/games/${id}`);
     }
   };
 
@@ -30,12 +30,14 @@ export default function PopularGames() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {topGames.map((game) => (
-            <div
+            <motion.div
               key={game.id}
-              onClick={() => handleClick(game.id)} // ✅ click handler
+              onClick={() => handleClick(game.id)}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 300 }}
               className="bg-gray-800 rounded-lg shadow-lg overflow-hidden 
-                         hover:scale-105 transform transition duration-300 
-                         cursor-pointer"
+                         cursor-pointer border border-purple-700/40"
             >
               <img
                 src={game.coverPhoto}
@@ -62,7 +64,7 @@ export default function PopularGames() {
                   Developer: {game.developer}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

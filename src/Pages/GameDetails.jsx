@@ -1,12 +1,11 @@
-// src/Pages/GameDetails.jsx
 import { useLoaderData, useParams, Link } from "react-router";
 import { AuthContext } from "../Provider/AuthContext";
 import { use } from "react";
 import { HashLoader } from "react-spinners";
+import { motion } from "framer-motion";
 
 export default function GameDetails() {
-  const {loading}= use(AuthContext)
-  
+  const { loading } = use(AuthContext);
   const games = useLoaderData();
   const { id } = useParams();
   const game = games.find((g) => g.id === id);
@@ -18,6 +17,7 @@ export default function GameDetails() {
       </div>
     );
   }
+
   if (loading) {
     return (
       <div className="w-full flex justify-center items-center py-70 bg-gray-900">
@@ -28,21 +28,30 @@ export default function GameDetails() {
 
   return (
     <section className="min-h-screen bg-gray-900 text-white">
-      {/* Top spacing so it doesn't stick to navbar */}
       <title>{game.title}</title>
       <div className="container mx-auto px-4 pt-24 pb-16">
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Cover Photo / Banner */}
-          <div className="lg:w-1/2">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="lg:w-1/2"
+          >
             <img
               src={game.coverPhoto}
               alt={game.title}
               className="rounded-lg shadow-lg w-full object-cover"
             />
-          </div>
+          </motion.div>
 
           {/* Primary info */}
-          <div className="lg:w-1/2 flex flex-col justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="lg:w-1/2 flex flex-col justify-center"
+          >
             <h1 className="text-4xl font-bold mb-4">{game.title}</h1>
             <p className="text-gray-300 mb-6">{game.description}</p>
 
@@ -74,16 +83,19 @@ export default function GameDetails() {
                 Back to All Games
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Separate Description section (long form) */}
-        <div className="mt-12 border-t border-gray-700 pt-8">
+        {/* Description section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 border-t border-gray-700 pt-8"
+        >
           <h2 className="text-2xl font-semibold mb-4">Description</h2>
-          <p className="text-gray-300 leading-relaxed">
-            {game.description}
-          </p>
-        </div>
+          <p className="text-gray-300 leading-relaxed">{game.description}</p>
+        </motion.div>
       </div>
     </section>
   );

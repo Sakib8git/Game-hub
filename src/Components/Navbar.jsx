@@ -8,52 +8,85 @@ import { PuffLoader } from "react-spinners";
 export default function Navbar() {
   const { user, loading } = useContext(AuthContext);
 
-  // console.log(loading);
-
   const navLinks = (
     <>
       <li>
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive
-            ? "text-purple-400 font-semibold flex items-center space-x-1"
-            : "flex items-center space-x-1 hover:text-purple-300 transition"
-        }
-      >
-        <Home className="w-4 h-4" />
-        <span>Home</span>
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        to="/games"
-        className={({ isActive }) =>
-          isActive
-            ? "text-purple-400 font-semibold flex items-center space-x-1"
-            : "flex items-center space-x-1 hover:text-purple-300 transition"
-        }
-      >
-        <Trophy className="w-4 h-4" />
-        <span>All Games</span>
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        to="/leaderboard"
-        className={({ isActive }) =>
-          isActive
-            ? "text-purple-400 font-semibold flex items-center space-x-1"
-            : "flex items-center space-x-1 hover:text-purple-300 transition"
-        }
-      >
-        <User className="w-4 h-4" />
-        <span>Leaderboard</span>
-      </NavLink>
-    </li>
-
-
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-400 font-semibold flex items-center space-x-1"
+              : "flex items-center space-x-1 hover:text-purple-300 transition"
+          }
+        >
+          <Home className="w-4 h-4" />
+          <span>Home</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/games"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-400 font-semibold flex items-center space-x-1"
+              : "flex items-center space-x-1 hover:text-purple-300 transition"
+          }
+        >
+          <Trophy className="w-4 h-4" />
+          <span>All Games</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/leaderboard"
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-400 font-semibold flex items-center space-x-1"
+              : "flex items-center space-x-1 hover:text-purple-300 transition"
+          }
+        >
+          <User className="w-4 h-4" />
+          <span>Leaderboard</span>
+        </NavLink>
+      </li>
     </>
+  );
+
+  const authButtons = loading ? (
+    <div className="flex justify-center py-2">
+      <PuffLoader color="#05786a" size={40} />
+    </div>
+  ) : !user ? (
+    <>
+      <li>
+        <Link
+          to="/login"
+          className="text-purple-700 font-semibold hover:text-purple-500"
+        >
+          Login
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/register"
+          className="text-purple-700 font-semibold hover:text-purple-500"
+        >
+          Register
+        </Link>
+      </li>
+    </>
+  ) : (
+    <li>
+      <Link to="/profile" className="flex items-center gap-2">
+        <img
+          src={user.photoURL}
+          alt={user.displayName}
+          title={user.displayName}
+          className="w-8 h-8 rounded-full border-2 border-purple-400 hover:border-pink-400 transition"
+        />
+        <span className="text-purple-300 font-semibold">{user.displayName}</span>
+      </Link>
+    </li>
   );
 
   return (
@@ -83,6 +116,8 @@ export default function Navbar() {
               className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black z-50"
             >
               {navLinks}
+              <div className="divider my-1" />
+              {authButtons}
             </ul>
           </div>
 
@@ -98,10 +133,8 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           <ul className="hidden lg:flex items-center gap-6">{navLinks}</ul>
 
-          {loading ? (
-            <PuffLoader color="#05786a" size={40} />
-          ) : !user ? (
-            <div className="flex gap-2">
+          {!loading && !user && (
+            <div className="hidden lg:flex gap-2">
               <Link
                 to="/login"
                 className="px-4 py-2 bg-white text-purple-700 font-semibold rounded-md hover:bg-purple-100 transition"
@@ -115,18 +148,20 @@ export default function Navbar() {
                 Register
               </Link>
             </div>
-          ) : (
-            <div className="flex items-center space-x-4">
-              <Link to="/profile">
-                <img
-                  src={user.photoURL}
-                  alt={user.displayName}
-                  title={user.displayName}
-                  className="w-10 h-10 rounded-full border-2 border-purple-400 cursor-pointer hover:border-pink-400 transition"
-                />
-              </Link>
-            </div>
           )}
+
+          {!loading && user && (
+            <Link to="/profile">
+              <img
+                src={user.photoURL}
+                alt={user.displayName}
+                title={user.displayName}
+                className="w-10 h-10 rounded-full border-2 border-purple-400 cursor-pointer hover:border-pink-400 transition"
+              />
+            </Link>
+          )}
+
+          {loading && <PuffLoader color="#05786a" size={40} />}
         </div>
       </div>
     </div>
