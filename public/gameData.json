@@ -6,6 +6,7 @@
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "detailedDescription": "PUBG Mobile delivers an intense battle royale experience where 100 players parachute onto a remote island to fight for survival in a winner-takes-all showdown. Players must locate and scavenge their own weapons, vehicles, and supplies while battling it out in a visually and tactically rich battleground that forces players into a shrinking play zone. With multiple game modes including Classic, Arcade, and EvoGround, players can choose from various maps like Erangel, Miramar, Sanhok, and Vikendi. The game features realistic graphics, smooth controls, voice chat with teammates, clan systems, and regular seasonal updates with new content. Customize your character, weapons, and vehicles while climbing the ranks in competitive seasons.",
     "ratings": "4.5",
     "developer": "Krafton"
   },
@@ -16,6 +17,7 @@
     "category": "FPS",
     "downloadLink": "https://www.callofduty.com/mobile",
     "description": "Experience the thrill of Call of Duty with iconic multiplayer maps, various game modes, and intense battle royale action.",
+    "detailedDescription": "Call of Duty: Mobile brings the legendary FPS franchise to your fingertips with console-quality HD gaming on mobile. Engage in thrilling multiplayer action with iconic maps from Call of Duty: Black Ops and Modern Warfare, including Nuketown, Crash, and Hijacked. Choose from multiple game modes such as Team Deathmatch, Domination, Search and Destroy, and the massive 100-player Battle Royale mode. Collect and customize your favorite characters, weapons, and scorestreaks while progressing through seasonal ranked modes. The game features smooth 60fps gameplay, controller support, multiple weapon classes, create-a-class customization, and regular seasonal content updates with new maps, modes, and events.",
     "ratings": "4.6",
     "developer": "Activision"
   },
@@ -26,7 +28,8 @@
     "category": "RPG",
     "downloadLink": "https://genshin.hoyoverse.com/",
     "description": "An open-world action RPG featuring stunning visuals, elemental combat, and an expansive fantasy world to explore.",
-    "ratings": "4.7",
+    "detailedDescription": "Genshin Impact is a breathtaking open-world action RPG set in the fantasy world of Teyvat, where seven nations represent different elements. Players take on the role of the Traveler, searching for their lost sibling while unraveling the mysteries of this vast world. The game features a unique elemental combat system where players can switch between multiple characters in real-time, each with their own elemental abilities and combat styles. Explore diverse landscapes from lush forests to snowy mountains, solve environmental puzzles, challenge powerful bosses, and discover hidden treasures. With stunning anime-style graphics, an emotionally engaging storyline, a gacha system for collecting characters and weapons, co-op multiplayer support, and continuous updates adding new regions and storylines, Genshin Impact offers hundreds of hours of adventure.",
+    "ratings": "4.5",
     "developer": "HoYoverse"
   },
   {
@@ -36,6 +39,7 @@
     "category": "Strategy",
     "downloadLink": "https://www.innersloth.com/games/among-us/",
     "description": "A multiplayer social deduction game where crewmates must identify impostors before it's too late.",
+    "detailedDescription": "Among Us is a thrilling multiplayer social deduction game set aboard a spaceship where 4-15 players work together to prepare their ship for departure. However, one or more players are secretly impostors whose goal is to eliminate the crew before the ship is ready. Crewmates must complete various mini-game tasks around the map while staying alert for suspicious behavior. When a body is discovered or an emergency meeting is called, players discuss and vote to eject suspected impostors. The game features multiple maps including The Skeld, MIRA HQ, Polus, and The Airship, with customizable game rules, character cosmetics, in-game voice chat, and cross-platform play. Success requires keen observation, logical deduction, and persuasive communication skills.",
     "ratings": "4.3",
     "developer": "Innersloth"
   },
@@ -46,6 +50,7 @@
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashofclans/",
     "description": "Build your village, train troops, and battle with millions of players in this epic combat strategy game.",
+    "detailedDescription": "Clash of Clans is an epic multiplayer strategy game where you build and upgrade your village, train a variety of troops, and battle against millions of players worldwide. Construct and customize your base with defensive buildings like cannons, archer towers, and walls to protect your resources from enemy raids. Join or create a clan with other players to participate in Clan Wars, Clan War Leagues, and Clan Games for exclusive rewards. Unlock powerful heroes including the Barbarian King, Archer Queen, Grand Warden, and Royal Champion, each with unique abilities. The game features multiple progression paths, seasonal challenges, builder base mode, friendly challenges, and regular updates introducing new troops, defenses, and game mechanics. Strategic base layout and troop composition are key to victory.",
     "ratings": "4.5",
     "developer": "Supercell"
   },
@@ -56,6 +61,7 @@
     "category": "Sandbox",
     "downloadLink": "https://www.minecraft.net/",
     "description": "Explore infinite worlds and build everything from simple homes to grand castles in this creative sandbox game.",
+    "detailedDescription": "Minecraft is the ultimate sandbox game that lets your imagination run wild in procedurally generated worlds made entirely of blocks. In Survival mode, gather resources, craft tools and weapons, build shelter, and fend off monsters that emerge at night. In Creative mode, enjoy unlimited resources and the ability to fly while constructing massive structures without limitations. Explore diverse biomes including forests, deserts, oceans, mountains, and the mysterious Nether and End dimensions. The game supports multiplayer servers where you can collaborate with friends, features redstone circuits for creating complex contraptions, includes various mob creatures both friendly and hostile, offers extensive modding support, and receives regular updates adding new blocks, items, mobs, and gameplay features. Whether you prefer building, exploring, or surviving, Minecraft offers endless possibilities.",
     "ratings": "4.8",
     "developer": "Mojang Studios"
   },
@@ -66,6 +72,7 @@
     "category": "Puzzle",
     "downloadLink": "https://king.com/game/candycrush",
     "description": "Match colorful candies and solve challenging puzzles in this addictive match-3 game with hundreds of levels.",
+    "detailedDescription": "Candy Crush Saga is a wildly addictive match-3 puzzle game featuring thousands of sweet and challenging levels across various colorful worlds. Match three or more candies of the same color to clear them from the board and achieve level objectives within limited moves. Create special candy combinations like striped candies, wrapped candies, and color bombs to trigger powerful effects and clear difficult obstacles. Each episode introduces new game mechanics, blockers like chocolate and licorice, and unique challenges. The game features daily rewards, timed boosters, special events, leaderboards to compete with friends, the ability to sync progress across devices, and regular updates with new levels. Strategic thinking and careful planning are essential to overcome increasingly difficult puzzles and earn three stars on every level.",
     "ratings": "4.4",
     "developer": "King"
   },
@@ -76,6 +83,7 @@
     "category": "Arcade",
     "downloadLink": "https://www.sybo.com/games/subway-surfers/",
     "description": "Dash through the subway tracks, dodge trains, and collect coins in this endless runner adventure.",
+    "detailedDescription": "Subway Surfers is a vibrant endless runner game where you play as a young graffiti artist caught by the inspector and his dog while tagging a subway train. Dash through colorful subway tracks, dodging oncoming trains, barriers, and obstacles while collecting coins and power-ups. Swipe left, right, up, or down to change lanes, jump, or roll under barriers in this fast-paced action game. Collect jetpacks, coin magnets, super sneakers, and hoverboards to extend your run. The game features a World Tour that visits a new city every month with unique themed environments, unlockable characters each with distinct outfits, missions and challenges to complete, daily rewards, leaderboards, and special limited-time events. Upgrade your power-ups and unlock hoverboards with special abilities to achieve higher scores.",
     "ratings": "4.5",
     "developer": "SYBO Games"
   },
@@ -86,6 +94,7 @@
     "category": "Sandbox",
     "downloadLink": "https://www.roblox.com/",
     "description": "Create, share experiences, and play millions of user-generated games in this immersive platform.",
+    "detailedDescription": "Roblox is a global platform that brings millions of people together through play, allowing users to explore, create, and share experiences in immersive 3D worlds. With millions of user-generated games spanning every genre imaginable including adventure, role-playing, racing, simulation, horror, and more, there's something for everyone. Players can customize their avatars with countless clothing items, accessories, and animations from the Avatar Shop. Roblox Studio, the platform's free creation tool, enables users to build their own games and experiences using Lua scripting, with the potential to earn real money through the Developer Exchange program. The platform features cross-platform play across mobile, desktop, console, and VR, voice chat capabilities, friend systems, groups, and regular platform updates. Whether you want to play obstacle courses, tycoon games, role-play scenarios, or create your own virtual worlds, Roblox provides endless entertainment.",
     "ratings": "4.4",
     "developer": "Roblox Corporation"
   },
@@ -96,7 +105,8 @@
     "category": "FPS",
     "downloadLink": "https://ff.garena.com/",
     "description": "Survive in 10-minute battle royale matches with fast-paced action and unique character abilities.",
-    "ratings": "4.3",
+    "detailedDescription": "Free Fire is a mobile battle royale game optimized for smooth gameplay on low-end devices, featuring intense 10-minute matches where 50 players fight for survival on a remote island. Each match begins with players parachuting onto the island, where they must quickly search for weapons, armor, and supplies while staying ahead of the shrinking safe zone. What sets Free Fire apart is its character system - each playable character has unique passive abilities that provide strategic advantages in combat. Choose your landing spot wisely, loot buildings, drive vehicles, and engage in tactical combat using a variety of weapons from pistols to sniper rifles. The game features multiple game modes including Classic, Clash Squad, and special limited-time modes, pet companions with unique skills, weapon customization with skins, ranked seasons, guild systems, and frequent collaborations with popular franchises.",
+    "ratings": "4.7",
     "developer": "Garena"
   },
   {
@@ -106,6 +116,7 @@
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashroyale/",
     "description": "Real-time multiplayer card battle game featuring characters from Clash of Clans in fast-paced arena combat.",
+    "detailedDescription": "Clash Royale combines real-time strategy, collectible card games, and tower defense in action-packed multiplayer battles. Build your deck from over 100 unique cards featuring troops, spells, and defenses inspired by Clash of Clans. In each 3-minute match, deploy your cards strategically to destroy your opponent's towers while defending your own, managing elixir resources carefully to create powerful combinations. Climb through multiple arenas from Training Camp to Ultimate Champion, unlock new cards and powerful legendary cards along the way. The game features clan wars where you battle alongside clan members for glory and rewards, special challenges and tournaments, multiple game modes including draft, triple elixir, and sudden death, seasonal balance changes, emotes for communication, and a robust competitive scene. Upgrade your cards, master elixir management, and create synergistic decks to dominate the arena.",
     "ratings": "4.4",
     "developer": "Supercell"
   },
@@ -116,6 +127,7 @@
     "category": "MOBA",
     "downloadLink": "https://m.mobilelegends.com/",
     "description": "5v5 MOBA battles with over 100 heroes, strategic team fights, and fast-paced action in 10-minute matches.",
+    "detailedDescription": "Mobile Legends: Bang Bang is a premier mobile MOBA game featuring intense 5v5 battles designed specifically for mobile devices with streamlined controls and 10-minute match durations. Choose from over 100 unique heroes across six roles - Tank, Fighter, Assassin, Mage, Marksman, and Support - each with distinct abilities and playstyles. Work with your team to destroy enemy turrets, secure jungle buffs, eliminate the Lord and Turtle objectives, and ultimately destroy the enemy base. The game features a ranked mode with multiple tiers from Warrior to Mythical Glory, regular balance updates and new hero releases, multiple game modes including Classic, Ranked, Brawl, and Arcade modes, voice chat for team coordination, extensive hero customization with skins, emblems, and battle spells, an active esports scene, and seasonal events. Master last-hitting, positioning, map awareness, and team composition to climb the ranks.",
     "ratings": "4.5",
     "developer": "Moonton"
   },
@@ -126,6 +138,7 @@
     "category": "Racing",
     "downloadLink": "https://www.asphaltlegends.com/",
     "description": "Race with premium licensed cars through spectacular locations with console-quality graphics and arcade action.",
+    "detailedDescription": "Asphalt 9: Legends delivers the ultimate arcade racing experience with over 80 licensed vehicles from prestigious manufacturers like Ferrari, Porsche, Lamborghini, and W Motors. Race through spectacular locations around the world including the Himalayas, Rome, Cairo, and San Francisco with stunning console-quality graphics and visual effects. Master the innovative TouchDrive control system or use manual controls for maximum precision. Perform gravity-defying stunts, execute perfect nitro boosts, and take down opponents in various game modes including Career Mode with 900+ events, Multiplayer races, Time-Limited Events, and Club competitions. The game features detailed car customization, upgrade systems, daily events, special limited-time cars, an extensive soundtrack, regular updates with new cars and tracks, and stunning visual effects including dynamic weather. Collect blueprints to unlock and star up your dream car garage.",
     "ratings": "4.6",
     "developer": "Gameloft"
   },
@@ -136,6 +149,7 @@
     "category": "Action",
     "downloadLink": "https://supercell.com/en/games/brawlstars/",
     "description": "Fast-paced 3v3 multiplayer brawler with unique game modes, diverse characters, and quick matches.",
+    "detailedDescription": "Brawl Stars is a fast-paced multiplayer action game featuring quick 3v3 battles with unique game modes and a diverse roster of Brawlers, each with their own personality, attack style, and super ability. Compete in multiple game modes including Gem Grab (collect and hold gems), Brawl Ball (score goals), Bounty (eliminate enemies for stars), Heist (crack the safe), Showdown (solo or duo battle royale), Hot Zone (capture and hold zones), and Knockout (team elimination). Unlock and upgrade over 60 Brawlers across different rarity tiers, each with unique gadgets and star powers that change how they play. Join or create clubs with friends, compete in Power League ranked mode, participate in special events and challenges, unlock Brawler skins and pins, and strategize with your team to dominate. With 3-minute matches, colorful graphics, and easy-to-learn but hard-to-master gameplay, Brawl Stars offers quick and exciting action.",
     "ratings": "4.5",
     "developer": "Supercell"
   },
@@ -146,6 +160,7 @@
     "category": "Arcade",
     "downloadLink": "https://www.imangistudios.com/games/temple-run-2/",
     "description": "Run for your life in this thrilling endless runner with new obstacles, power-ups, and stunning environments.",
+    "detailedDescription": "Temple Run 2 is the sequel to the groundbreaking endless runner that defined the genre on mobile devices. After stealing an idol from an ancient temple, you must run for your life as the Evil Demon Monkeys chase you through beautiful and dangerous environments. Navigate through cliffs, zip lines, mines, and forests while tilting to turn, swiping to jump, slide, and turn corners. The game features stunning new graphics with organic environments, exciting new obstacles like zip lines and mine tracks, special powers including shields, coin magnets, and speed boosts, multiple unlockable characters each with unique abilities, global challenges and daily objectives, achievement systems, and special events. Collect coins to purchase power-up upgrades, unlock new characters, and compete on leaderboards. With responsive controls, beautiful environments, and addictive gameplay, Temple Run 2 offers endless excitement.",
     "ratings": "4.3",
     "developer": "Imangi Studios"
   },
@@ -156,6 +171,7 @@
     "category": "AR",
     "downloadLink": "https://pokemongolive.com/",
     "description": "Explore the real world to catch Pokémon, battle in gyms, and raid with friends in this augmented reality game.",
+    "detailedDescription": "Pokémon GO is a revolutionary augmented reality mobile game that transforms the real world into a Pokémon adventure. Using your phone's GPS and camera, explore your neighborhood and beyond to discover Pokémon appearing in the real world around you. Catch hundreds of Pokémon species by using AR to see them in your actual environment, then throw Poké Balls to capture them. Battle at Gyms controlled by rival teams, team up with other trainers to defeat powerful Pokémon in Raid Battles, trade Pokémon with friends, participate in GO Battle League PvP battles, complete Field and Special Research tasks, attend Community Day events featuring special Pokémon, and explore with your Buddy Pokémon. The game features seasonal events, weekly Spotlight Hours, regular updates with new Pokémon generations, team-based gameplay with Team Mystic, Valor, or Instinct, and encourages physical activity and social interaction. Adventure together with fellow trainers in your area.",
     "ratings": "4.1",
     "developer": "Niantic"
   },
@@ -166,6 +182,7 @@
     "category": "Sports",
     "downloadLink": "https://www.miniclip.com/games/8-ball-pool-mobile/",
     "description": "Play pool online against opponents worldwide with realistic physics and various game modes.",
+    "detailedDescription": "8 Ball Pool is the world's most popular online pool game, offering realistic physics and competitive gameplay against millions of players worldwide. Challenge opponents in 1v1 matches where you must pot your designated group of balls (stripes or solids) and then sink the 8 ball to win. The game features realistic ball physics and intuitive touch controls using guideline adjustments and spin. Play in various locations from London to Las Vegas, each with different entry fees and rewards. Climb the rankings through the tournament mode, compete in 8-player tournaments, participate in weekly competitions, join pool clubs, and unlock exclusive cues with unique stats. Customize your game with special cues, avatars, and victory animations. The game includes level progression systems, daily rewards, special events, trick shots, and the ability to challenge Facebook friends. Master spin control, precise aiming, and strategic play to become a pool champion.",
     "ratings": "4.5",
     "developer": "Miniclip"
   },
@@ -176,6 +193,7 @@
     "category": "FPS",
     "downloadLink": "https://ff.garena.com/max/",
     "description": "Enhanced version of Free Fire with improved graphics, effects, and immersive battle royale gameplay.",
+    "detailedDescription": "Garena Free Fire MAX is the enhanced version of the original Free Fire, featuring significantly improved graphics, animations, and visual effects while maintaining the same fast-paced 10-minute battle royale gameplay. Experience ultra-HD graphics with enhanced textures, realistic lighting effects, and detailed character models. The game features all the core gameplay elements of Free Fire including the unique character system with special abilities, but with added visual polish including improved map environments, weapon effects, and death animations. Enjoy exclusive FREE FIRE MAX rewards, special emotes, exclusive gun skins, unique lobby backgrounds, and MAX-exclusive events. The game supports up to 50 players per match, features multiple game modes, pet systems, guild battles, ranked seasons, and custom room options. Choose from various characters, customize your loadout, and deploy strategic abilities to outlast opponents in visually stunning battlegrounds. Regular updates bring new features, collaborations, and gameplay improvements.",
     "ratings": "4.4",
     "developer": "Garena"
   },
@@ -186,6 +204,7 @@
     "category": "Fighting",
     "downloadLink": "https://www.nekki.com/games/shadow-fight-3/",
     "description": "Epic martial arts action with stunning animations, RPG elements, and intense shadow combat battles.",
+    "detailedDescription": "Shadow Fight 3 is a visually stunning fighting game that combines beautiful martial arts animations with deep RPG mechanics and an engaging storyline. Unlike its predecessors, Shadow Fight 3 features fully rendered 3D characters and environments with smooth animations and realistic physics. Choose from three distinct fighting styles - Legion (defensive heavy armor), Dynasty (agile ninja techniques), and Heralds (futuristic technology) - each with unique weapons, armor sets, and special moves. Engage in cinematic story mode battles as you uncover the mystery of the shadow energy, participate in duels against other players in PvP mode, join raids to defeat powerful bosses cooperatively, and complete events for exclusive rewards. The game features extensive equipment customization with weapons, armor, and helmets, upgrade systems with perks and abilities, shadow abilities that unleash devastating power, combo systems for skilled players, beautiful graphics with dynamic lighting, and regular updates with new content. Master different fighting techniques and create your own unique combat style.",
     "ratings": "4.5",
     "developer": "Nekki"
   },
@@ -196,6 +215,7 @@
     "category": "Racing",
     "downloadLink": "https://www.fingersoft.com/game/hill-climb-racing-2/",
     "description": "Physics-based driving game with challenging terrains, vehicle upgrades, and multiplayer racing action.",
+    "detailedDescription": "Hill Climb Racing 2 is a physics-based driving game where you race against others while navigating challenging and often hilarious terrain. Drive various vehicles including jeeps, motorcycles, monster trucks, and even tanks across diverse environments like Countryside, Desert, Arctic, and Mines. The game features ragdoll physics that creates amusing moments when crashes occur, making failure just as entertaining as success. Compete in Cups - multiplayer races against real players where you must reach checkpoints before your fuel runs out while collecting coins. Upgrade your vehicles with better engines, suspension, tires, and 4WD systems to improve performance. Unlock and customize vehicles with paint jobs and cosmetic items, complete daily tasks and challenges, participate in weekly team events with your team, and master Adventure mode with progressively difficult stages. The game includes tricks and flips for bonus points, fuel management mechanics, various power-ups like turbo boosts and coin magnets, and humorous physics-based gameplay that's easy to pick up but challenging to master.",
     "ratings": "4.4",
     "developer": "Fingersoft"
   }

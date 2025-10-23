@@ -69,9 +69,7 @@ export default function GameDetails() {
         <div className="mt-12 border-t border-gray-700 pt-8">
           <h2 className="text-2xl font-semibold mb-4">Description</h2>
           <p className="text-gray-300 leading-relaxed">
-            {game.longDescription
-              ? game.longDescription
-              : "More detailed description will be available soon."}
+            {game.description}
           </p>
         </div>
       </div>
