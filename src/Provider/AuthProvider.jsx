@@ -14,6 +14,7 @@ import {
 import { auth } from "../fireBase/firebase.config";
 const AuthProvider = ({ children }) => {
   const [user, setUSer] = useState();
+  const [loading, setLoading] = useState(true);
   // ----------------------------------------
   // registration-----------
   const createWithEmail = (email, password) => {
@@ -42,8 +43,8 @@ const AuthProvider = ({ children }) => {
 
   // update pro
   const updateUserProfile = (profile) => {
-  return updateProfile(auth.currentUser, profile);
-};
+    return updateProfile(auth.currentUser, profile);
+  };
 
   const authData = {
     user,
@@ -53,18 +54,19 @@ const AuthProvider = ({ children }) => {
     signInWithGoogle,
     resetPassword,
     logOut,
-    updateUserProfile
+    updateUserProfile,
+    loading,
+    setLoading,
   };
 
-// Auth state observer
+  // Auth state observer
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUSer(currentUser);
+      setLoading(false);
     });
     return () => unsubscribe();
   }, []);
-
-
 
   return <AuthContext value={authData}>{children}</AuthContext>;
 };

@@ -5,11 +5,11 @@ import Footer from "../Components/Footer";
 
 const RootLayoyt = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
+      <main className="flex-3">
         <Outlet></Outlet>
       </main>
       <footer>

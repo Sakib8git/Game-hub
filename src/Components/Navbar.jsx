@@ -1,14 +1,14 @@
-import { Link, NavLink, useNavigate } from "react-router";
+import { Link, NavLink } from "react-router";
 import { LogOut, Home, Trophy, User } from "lucide-react";
 import logo from "../assets/gamepad.png";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthContext";
+import { PuffLoader } from "react-spinners";
 
 export default function Navbar() {
-  const { user,} = useContext(AuthContext);
-  
+  const { user, loading } = useContext(AuthContext);
 
- 
+  // console.log(loading);
 
   const navLinks = (
     <>
@@ -83,7 +83,9 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           <ul className="hidden lg:flex items-center gap-6">{navLinks}</ul>
 
-          {!user ? (
+          {loading ? (
+            <PuffLoader color="#05786a" size={40} />
+          ) : !user ? (
             <div className="flex gap-2">
               <Link
                 to="/login"

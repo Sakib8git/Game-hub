@@ -1,11 +1,21 @@
 import { useLoaderData, useNavigate } from "react-router";
-import { useContext } from "react";
+import { use } from "react";
 import { AuthContext } from "../Provider/AuthContext";
+import { HashLoader } from "react-spinners";
 
 export default function AllGames() {
   const games = useLoaderData();
-  const { user } = useContext(AuthContext); // ✅ check login status
+  const { user, loading } = use(AuthContext); // ✅ check login status
   const navigate = useNavigate();
+
+
+if (loading) {
+    return (
+      <div className="w-full flex justify-center items-center py-70 bg-gray-900">
+        <HashLoader color="#8de6f3" />
+      </div>
+    );
+  }
 
   const handleViewDetails = (id) => {
     if (!user) {
