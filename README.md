@@ -52,30 +52,31 @@
 
 ### 🔹 Runtime Dependencies
 ```json
-{
-  "react": "^18.x",
-  "react-router-dom": "^6.x",
-  "axios": "^1.x",
-  "tailwindcss": "^3.x",
-  "styled-components": "^6.x",
-  "framer-motion": "^10.x",
-  "react-toastify": "^9.x",
-  "date-fns": "^2.x",
-  "firebase": "^10.x",
-  "express": "^4.x",
-  "mongoose": "^7.x",
-  "cors": "^2.x",
-  "dotenv": "^16.x",
-  "body-parser": "^1.x",
-  "nodemon": "^3.x",
-  "lucide-react": "^0.3.x",
-  "react-icons": "^4.x",
-  "react-spinners": "^1.x",
-  "daisyui": "^3.x",
-  "vite": "^5.x",
-  "@vitejs/plugin-react": "^4.x",
-  "@tailwindcss/vite": "^0.1.x"
-}
+ "dependencies": {
+    "@tailwindcss/vite": "^4.1.15",
+    "firebase": "^12.4.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.546.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.9.4",
+    "react-spinners": "^0.17.0",
+    "react-toastify": "^10.0.7-0",
+    "tailwindcss": "^4.1.15"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "daisyui": "^5.3.7",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "vite": "^7.1.7"
+  }
 ```
 ---
 
