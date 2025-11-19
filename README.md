@@ -13,17 +13,6 @@
 
 ---
 
-## 📖 Table of Contents
-
-- [Purpose](#🎯-purpose)  
-- [Key Features](#🚀-key-features)  
-- [NPM Packages Used](#📦-npm-packages-used)  
-- [Dependencies](#📦-dependencies)  
-- [Local Setup Guide](#🧪-local-setup-guide)  
-- [Credits](#🙌-credits)  
-- [Contact](#📬-contact)
-
----
 
 ## 🎯 Purpose
 
