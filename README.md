@@ -1,14 +1,27 @@
-# 🎮 Gamehub
+# 🎮 GameHub
 
 **GAME-HUB** is a responsive React application that showcases a list of games with authentication, routing, and dynamic UI interactions.
-<img width="1856" height="976" alt="image" src="https://github.com/user-attachments/assets/2e7ba880-7998-48c6-8b49-2df23cdb296f" />
+
+<img width="1856" height="976" alt="GameHub Screenshot" src="https://github.com/user-attachments/assets/2e7ba880-7998-48c6-8b49-2df23cdb296f" />
 
 ---
 
 ## 🔗 Live Site
 
-[GAME-HUB](https://game-hub-library.netlify.app/)  
-[GAME-HUB Backup](https://game-hub-88f.pages.dev/)
+- 🌐 [GAME-HUB](https://game-hub-library.netlify.app/)  
+- 🌐 [GAME-HUB Backup](https://game-hub-88f.pages.dev/)
+
+---
+
+## 📖 Table of Contents
+
+- [Purpose](#🎯-purpose)  
+- [Key Features](#🚀-key-features)  
+- [NPM Packages Used](#📦-npm-packages-used)  
+- [Dependencies](#📦-dependencies)  
+- [Local Setup Guide](#🧪-local-setup-guide)  
+- [Credits](#🙌-credits)  
+- [Contact](#📬-contact)
 
 ---
 
@@ -49,40 +62,61 @@
 ## 📦 Dependencies
 
 ### 🔹 Runtime Dependencies
-
-- `@tailwindcss/vite`  
-- `firebase`  
-- `framer-motion`  
-- `lucide-react`  
-- `react`  
-- `react-dom`  
-- `react-icons`  
-- `react-router`  
-- `react-spinners`  
-- `react-toastify`  
-- `tailwindcss`
-- `@vitejs/plugin-react`  
-- `daisyui`  
-- `vite`
-
+```json
+{
+  "react": "^18.x",
+  "react-router-dom": "^6.x",
+  "axios": "^1.x",
+  "tailwindcss": "^3.x",
+  "styled-components": "^6.x",
+  "framer-motion": "^10.x",
+  "react-toastify": "^9.x",
+  "date-fns": "^2.x",
+  "firebase": "^10.x",
+  "express": "^4.x",
+  "mongoose": "^7.x",
+  "cors": "^2.x",
+  "dotenv": "^16.x",
+  "body-parser": "^1.x",
+  "nodemon": "^3.x",
+  "lucide-react": "^0.3.x",
+  "react-icons": "^4.x",
+  "react-spinners": "^1.x",
+  "daisyui": "^3.x",
+  "vite": "^5.x",
+  "@vitejs/plugin-react": "^4.x",
+  "@tailwindcss/vite": "^0.1.x"
+}
+```
 ---
 
-## 🧪 Local Setup Guide
-### 1️⃣ Clone the Repository
+## Installation️ & Setup
+1. Clone the repo and install dependencies:
 
-`git clone https://github.com/Sakib8git/Game-hub.git
-cd Game-hub`
+```bash
+git clone https://github.com/Sakib8git/Game-hub.git
+cd Game-hub
+```
+2. Set up environment variables by creating a `.env` file in the root directory:
 
+```env
+DATABASE_URL=your_database_url
+JWT_SECRET=your_jwt_secret
+```
 
-# Install all dependencies
-npm install
+3. Run the application:
 
-# Run the development server
+```bash
 npm run dev
+```
+## Contact
 
 
-## 🙌 Credits
+**Email:** [Sakib](sakib30278@gmail.com)
 
-- Built as part of Programming Hero assignment  
-- Designed for responsive performance and smooth user interaction  
-- Deployed via Netlify and Cloudflare Pages
+
+
+
+
+
+
