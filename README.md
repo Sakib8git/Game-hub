@@ -1,6 +1,7 @@
 # 🎮 Gamehub
 
 **GAME-HUB** is a responsive React application that showcases a list of games with authentication, routing, and dynamic UI interactions.
+<img width="1856" height="976" alt="image" src="https://github.com/user-attachments/assets/2e7ba880-7998-48c6-8b49-2df23cdb296f" />
 
 ---
 
