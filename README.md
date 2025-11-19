@@ -45,6 +45,41 @@
 
 ---
 
+## 📦 Dependencies
+
+### 🔹 Runtime Dependencies
+
+- `@tailwindcss/vite`  
+- `firebase`  
+- `framer-motion`  
+- `lucide-react`  
+- `react`  
+- `react-dom`  
+- `react-icons`  
+- `react-router`  
+- `react-spinners`  
+- `react-toastify`  
+- `tailwindcss`
+- `@vitejs/plugin-react`  
+- `daisyui`  
+- `vite`
+
+---
+
+## 🧪 Local Setup Guide
+### 1️⃣ Clone the Repository
+
+`git clone https://github.com/Sakib8git/Game-hub.git
+cd Game-hub`
+
+
+# Install all dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+
 ## 🙌 Credits
 
 - Built as part of Programming Hero assignment  
