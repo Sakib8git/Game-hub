@@ -2,20 +2,22 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthContext";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router";
-
 export default function EditProfile() {
-  const { user, updateUserProfile } = useContext(AuthContext);
+  const { user, updateUserProfile, refreshNavUser } = useContext(AuthContext);
   const [name, setName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
   const navigate = useNavigate();
 
   const handleUpdate = (e) => {
     e.preventDefault();
-// -------------
+    // -------------
     updateUserProfile({ displayName: name, photoURL })
       .then(() => {
+        const updatedUser = { ...user, displayName: name, photoURL };
+        refreshNavUser(updatedUser);
+
         toast.success("Profile updated successfully!");
-         navigate("/profile"), 1000;
+        navigate("/profile"), 1000;
       })
       .catch((error) => {
         toast.error("Failed to update profile.");

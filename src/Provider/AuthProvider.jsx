@@ -45,6 +45,10 @@ const AuthProvider = ({ children }) => {
   const updateUserProfile = (profile) => {
     return updateProfile(auth.currentUser, profile);
   };
+  // Add this function
+  const refreshNavUser = (updatedUser) => {
+    setUSer(updatedUser);
+  };
 
   const authData = {
     user,
@@ -57,6 +61,7 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     loading,
     setLoading,
+    refreshNavUser,
   };
 
   // Auth state observer
